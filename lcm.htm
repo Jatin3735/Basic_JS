@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,r,c,lcm;
+        a=parseInt(prompt("Enter the value of a :"));
+        b=parseInt(prompt("Enter the value of b :"));
+        r=a%b;
+        c=a*b;
+        while(r!=0){
+            a=b;
+            b=r;
+            r=a%b;
+        }
+        lcm = c/b;
+        document.write("LCM is = "+lcm);
+    </script>
+
+</body>
+</html>

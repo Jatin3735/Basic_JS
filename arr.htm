@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aray</title>
+</head>
+<body>
+    <script>
+        var a=Array(5),i,j,k;
+        for(i=0;i<=4;i++)
+    {
+        a[i]=parseInt(prompt("enter value of index "+i+":"));
+    }
+    document.write("Array elements are :"+"<br>");
+    for(i=0;i<=4;i++){
+        document.write(a[i]+"<br>");
+    }
+    for(i=0;i<=4;i++){
+        for(j=i+1;j<=4;j++){
+            if(a[i]>a[j]){
+                k=a[i];
+                a[i]=a[j];
+                a[j]=k;
+            }
+        }
+    }
+    document.write("Array in Ascending Order :"+"<br>");
+    for(i=0;i<=4;i++){
+        document.write(a[i]+"<br>");
+    }
+    </script>
+</body>
+</html>
